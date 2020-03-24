@@ -33,8 +33,10 @@ for (let i = 0; i < numbers.length; i++) {
 console.log("Sum of numbers:" + sum);
 
 // 3. largest number
-let largestNumber = -1;
-for (let i = 0; i < numbers.length; i++) {
+let largestNumber = numbers[0]; // Set the "largest" to the first item
+
+// We can start at index 1 because we already saved index 0
+for (let i = 1; i < numbers.length; i++) {
     let currentNumber = numbers[i];
     if (largestNumber < currentNumber) {
         largestNumber = currentNumber;
@@ -50,3 +52,33 @@ for (let i = 0; i < numbers.length; i++) {
 }
 let mean = sum / numbers.length;
 console.log("Mean of numbers: " + mean);
+
+/***** Bonus Exercise *****/
+console.log("Bonus exercise:");
+
+function smallerThan5(input) {
+    let result = [];
+    for (let i = 0; i < input.length; i++) {
+        let currentItem = input[i];
+        if (currentItem < 5) {
+            result.push(currentItem);
+        }
+    }
+    return result;
+}
+
+console.log("Numbers of input smaller than 5: " + smallerThan5([1, 3, 7, 2, 9, 5]))
+
+function findIndex(itemToFind, input) {
+    let foundIndex = -1;
+    for (let i = 0; i < input.length; i++) {
+        let currentItem = input[i];
+        if (currentItem === itemToFind) {
+            foundIndex = i;
+            // break;
+        }
+    }
+    return foundIndex;
+}
+
+console.log("Index of 9 is: " + findIndex(9, [1, 3, 7, 2, 9, 5]));
