@@ -72,7 +72,7 @@ let books = ["Harry Potter", "The Hobbit", "Game of Thrones"];
 
 We can access elements in the array by number using square brackets "`[]`"
 
-The numbering starts at `0`:
+The numbering starts at `0` (think floors of a building):
 
 ```js
 let books = ["Harry Potter", "The Hobbit", "Game of Thrones"];
@@ -215,27 +215,6 @@ console.log(friends[3]); // David
 
 ---
 
-### Finding the index of an element
-
-You can see if and where an element exists in an array using `.indexOf()`:
-
-```js
-let friends = ["Alice", "Bob", "Carol"];
-
-let indexOfAlice = friends.indexOf("Alice"); // 0
-let indexOfDavid = friends.indexOf("David"); // -1
-
-let indexOfBob = friends.indexOf("Bob"); // ???
-if (indexOfBob > -1) {
-    console.log("Bob was found!");
-} else {
-    console.log("Bob was not found :(");
-}
-
-```
-
----
-
 ### Exercise 3
 
 Create an array containing a few numbers, ex `[3, 2, 9, 5, 6]`
@@ -247,8 +226,9 @@ Create an array containing a few numbers, ex `[3, 2, 9, 5, 6]`
 
 ---
 
-### BONUS Exercise
+### Homework
 
 * Create a new array containing only numbers of the original array that are smaller than 5
+ * ex: given input `[1, 3, 7, 2, 9, 5]`, return `[1, 3, 2]`
 * Write a function that takes a number and an array of numbers as input parameter. Return the index of the number if it is in the array, otherwise return `-1`
-* Create an array with 3 elements, each element should be a recipe, each recipe should have at least a name and an array of ingredients.
+ * ex: given inputs `5` and `[2, 1, 5, 6, 3]`, return `2`
