@@ -33,7 +33,7 @@ let cars = ["Saab", "Volvo", "BMW"];
 // we create an array using []
 let emptyArray = [];
 
-// we put the values we want in these angled brackets
+// we put the values we want in square brackets
 // separated by commas
 let ages = [19, 33, 25, 40];
 ```
