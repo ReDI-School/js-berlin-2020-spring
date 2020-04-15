@@ -7,26 +7,6 @@ Lesson 13, Thursday, 2020-04-16
 ---
 
 
-### Css Classes with JavaScript
-
-Just like we can set the text with JavaScript, we can also change the css classes:
-
-```js
-let myDiv = document.createElement('div');
-// <div></div>
-
-myDiv.classList.add('firstClass');
-// <div class='firstClass'></div>
-
-myDiv.classList.add('secondClass');
-// <div class='firstClass secondClass'></div>
-
-myDiv.classList.remove('firstClass');
-// <div class='secondClass'></div>
-```
-
----
-
 ###  Exercise
 
 Can you make this in HTML and CSS? Don't worry about making it move, just make sure the elements are on top of one another (click on the cover!).
@@ -89,6 +69,27 @@ if you want to center the text in the boxes, use this:
   align-items: center;
   text-align: center;
 }
+```
+
+---
+
+
+### Css Classes with JavaScript
+
+Just like we can set the text with JavaScript, we can also change the css classes:
+
+```js
+let myDiv = document.createElement('div');
+// <div></div>
+
+myDiv.classList.add('firstClass');
+// <div class='firstClass'></div>
+
+myDiv.classList.add('secondClass');
+// <div class='firstClass secondClass'></div>
+
+myDiv.classList.remove('firstClass');
+// <div class='secondClass'></div>
 ```
 
 ---
