@@ -36,8 +36,8 @@ Can you make this in HTML and CSS? Don't worry about making it move, just make s
 
 .fillParent {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 }
@@ -60,8 +60,8 @@ if you want to center the text in the boxes, use this:
 ```css
 .fillParent {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   display: flex;
@@ -237,7 +237,7 @@ We want the cover to go back to its original position when we click on it again.
 ```js
 cover.onclick = function() {
   if (cover.style.left === '100%'){
-    cover.style.left = '0px';
+    cover.style.left = '0';
   } else {
     cover.style.left = '100%';
   }
